@@ -4,7 +4,7 @@ const gravatar = require('gravatar');
 const bcrypt = require('bcryptjs');
 const config = require('config'); 
 const jwt = require('jsonwebtoken');
-const { check, validationResault } = require('express-validator/check');
+const { check, validationResault } = require('express-validator');
 
 const User = require('../../models/User');
 
