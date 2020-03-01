@@ -29,7 +29,7 @@ router.get('/me', auth, async (req, res) => {
 //@route        POST api/profile
 //@desk         Create or update the user profile     
 //@access       Private 
-reouter.post('/', [auth, 
+router.post('/', [auth, 
     [check('status', 'Status is required')
     .not()
     .isEmpty(),
